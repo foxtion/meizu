@@ -1,0 +1,322 @@
+.meizu-footer {
+	height: 247px;
+	padding: 0;
+	font-size: 14px;
+	color: #515151;
+	position: relative;
+	background-color: #fff;
+}
+
+.meizu-foot-link {
+	height: 178px;
+	padding: 48px 0 20px;
+	border-top: 1px solid #f1f1f1;
+}
+
+.meizu-foot-wrap {
+	height: 178px;
+}
+
+.meizu-row {
+	max-width: 1240px;
+	position: relative;
+}
+
+.meizu-footer-service {
+	width: 1000px;
+	float: left;
+	height: 69px;
+}
+
+.meizu-footer-service li {
+	float: left;
+	text-align: center;
+	width: 15%;
+	height: 69px;
+}
+
+.meizu-footer-service li a {
+	display: block;
+	line-height: 27px;
+	font-size: 12px;
+	color: #666;
+}
+
+.meizu-footer-service li a img {
+	width: 50px;
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+	border: 0;
+}
+
+.meizu-footer-service li span {
+	line-height: 30px;
+	color: #999;
+}
+
+.onlive-server {
+	height: 103px;
+	float: right;
+	text-align: right;
+	margin-top: -18px;
+}
+
+.onlive-server span {
+	color: #999;
+	font-size: 12px;
+	line-height: 30px;
+}
+
+.tel {
+	color: #00c3f5;
+	font-size: 25px;
+	font-weight: 400;
+	margin-top: -6px;
+	margin-bottom: 0;
+	line-height: 40px;
+}
+
+.footer-hr {
+	float: left;
+	margin: 10px auto 28px;
+	display: block;
+	height: 1px;
+	border-top: 1px solid #eee;
+	padding: 0;
+	width: 1240px;
+}
+
+.meizu-footer .meizu-footer-info {
+    color: #999;
+    text-align: left;
+    font-size: 12px;
+    width: 100%;
+}
+.meizu-footer-info img {
+	margin-bottom: -9px;
+}
+
+.meizu-footer-info-left {
+	float: left;
+}
+
+.meizu-footer-info-left ul {
+	height: 18px;
+	padding: 0;
+	margin: 0;
+}
+
+.meizu-footer-info-left ul li {
+	padding-right: 15px;
+	border-right: 1px solid #d6d6d6;
+	float: left;
+	height: 18px;
+	margin-right: 15px;
+}
+
+.meizu-footer-info-left ul li:last-child {
+	border: 0;
+}
+
+.meizu-footer-info-left ul li>a:hover {
+	color: #31a5e7;
+}
+
+.meizu-footer-certificate {
+	font-size: 12px;
+	padding-top: 8px;
+	color: #999;
+}
+
+.meizu-footer-certificate a {
+	margin: 0 3px;
+}
+
+.meizu-footer-certificate>a:hover {
+	color: #31a5e7;
+}
+
+.meizu-row2 {
+	max-width: 1240px;
+	height: 53px;
+	position: relative;
+}
+
+.ii-subscribe {
+	float: right;
+	margin-top: 25px;
+	position: relative;
+}
+
+
+.ii-subscribe a {
+	color: #999999;
+}
+
+/*.ii-subscribe i:nth-of-type(1){
+	color: #999999;
+}*/
+
+.ii-subscribe a img {
+	position: absolute;
+	bottom: 40px;
+	left: -10px;
+	width: 180px;
+	display: none;
+}
+
+.ii-subscribe-img {
+	display: inline-block;
+	width: 21px;
+	height: 18px;
+	position: relative;
+	top: 4px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.ii-hr {
+	display: inline-block;
+	width: 1px;
+	height: 14px;
+	background: #eee;
+	margin: 0 10px;
+	position: relative;
+	top: 5px;
+	*top: 3px
+}
+.meizu-footer .meizu-footer-info-left .footer-info-license {
+    margin: 0;
+}
+
+.ii-subscribe a {
+    display: inline-block;
+    *margin-right: 3px;
+}
+
+.meizu-footer a {
+    color: #515151;
+    text-decoration: none;
+}
+
+.meizu-footer .onlive-server .onlive-btn{
+	height: 30px;
+	padding: 0 16px;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+	border-radius: 20px;
+	margin-top: 3px;
+	display: inline-block;
+	font-size: 14px;
+	background: #0bbbef;
+}
+.meizu-footer .meizu-footer-info-left ul a {
+    display: block;
+    line-height: 18px;
+}
+.meizu-footer .meizu-foot-link a {
+    line-height: 27px;
+    font-size: 12px;
+    color: #666;
+}
+.meizu-footer .meizu-footer-info-left a {
+    color: #999;
+}
+
+.meizu-footer .meizu-footer-info-left .meizu-footer-language .icon-lang-logo-cn {
+    background-position: 0 0;
+}
+.meizu-footer .meizu-footer-info-left .meizu-footer-language i {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 0;
+    left: 0;
+    background-image: url(../images/img23.png) no-repeat;
+    background-size: cover;
+}
+.meizu-footer .meizu-footer-info-left i {
+    position: relative;
+    top: 4px;
+    *top: 2px;
+    display: inline-block;
+    height: 18px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.meizu-footer .meizu-footer-info-left .footer-info-record {
+    margin: 0 2px;
+}
+.meizu-footer .meizu-footer-info-left .footer-info-record i{
+	width: 14px;
+    background-image: url(../images/img35.png);
+    background-size: 96%;
+}
+.meizu-footer .meizu-footer-info-left .footer-info-license i {
+    width: 20px;
+    background-image: url(../images/img25.png);
+    background-size: 96%;
+}
+.meizu-footer .meizu-footer-info-left .footer-info-wel {
+    margin: 0;
+}
+.meizu-footer .meizu-footer-info-left .footer-info-wel i {
+    width: 20px;
+    background-image: url(../images/img28.png);
+    background-size: 96%;   
+}
+.meizu-footer .meizu-footer-info-left .footer-info-trust{
+	margin: 0;
+}
+.meizu-footer .meizu-footer-info-left .footer-info-trust i {
+    width: 25px;
+    background-image: url(../images/img29.png);
+    background-size: 96%;   
+}
+.meizu-footer .meizu-footer-info .ii-subscribe a:nth-of-type(1) .ii-subscribe-img{
+	background-image: url(../images/img25.png);
+	background-size: 96%;
+}
+.meizu-footer .meizu-footer-info .ii-subscribe a:nth-of-type(2) .ii-subscribe-img{
+	background-image: url(../images/img29.png);
+	background-size: 96%;
+}
+.meizu-footer .meizu-footer-info .ii-subscribe a:nth-of-type(3) .ii-subscribe-img{
+	background-image: url(../images/img28.png);
+	background-size: 96%;
+}
+.meizu-footer .meizu-footer-info .ii-subscribe a:nth-of-type(4) .ii-subscribe-img{
+	background-image: url(../images/img35.png);
+	background-size: 96%;
+}
+.meizu-footer .meizu-footer-info .ii-subscribe a:nth-of-type(1):hover img{
+	display: block;
+}
+.meizu-footer .meizu-footer-info .ii-subscribe a:nth-of-type(1):hover .ii-subscribe-img{
+    background-image: url(../images/img32.png);
+}
+.meizu-footer .meizu-footer-info .ii-subscribe a:nth-of-type(2):hover img{
+	display: block;
+}
+.meizu-footer .meizu-footer-info .ii-subscribe a:nth-of-type(2):hover .ii-subscribe-img{
+    background-image: url(../images/img36.png);
+}
+.meizu-footer .meizu-footer-info .ii-subscribe a:nth-of-type(3):hover .ii-subscribe-img{
+    background-image: url(../images/img33.png);
+}
+.meizu-footer .meizu-footer-info .ii-subscribe a:nth-of-type(4):hover .ii-subscribe-img{
+    background-image: url(../images/img26.png);
+}
+.meizu-footer .meizu-footer-info-left  .footer-info-license:hover i{
+    background-image: url(../images/img32.png);
+}
+.meizu-footer .meizu-footer-info-left .footer-info-wel:hover i{
+    background-image: url(../images/img33.png);
+}
+.meizu-footer .meizu-footer-info-left .footer-info-trust:hover i{
+    background-image: url(../images/img36.png);
+}
