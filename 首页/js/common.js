@@ -1,13 +1,13 @@
 var swiper = new Swiper('.swiper-container', {
-				loop: true,
-				autoplay: {
-					delay: 2000,
-					disableOnInteraction: false
-				},
-				pagination: {
-					el: '.swiper-pagination',
-					clickable: true,
-				}
+	loop: true,
+	autoplay: {
+		delay: 2000,
+		disableOnInteraction: false
+	},
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	}
 });
 console.log(swiper);
 
@@ -20,8 +20,8 @@ item.onmouseenter = function() {
 }
 item.onmouseleave = function() {
 	timer = setTimeout(function() {
-	box.style.display = 'none';
-	},100)
+		box.style.display = 'none';
+	}, 100)
 }
 box.onmouseenter = function() {
 	clearTimeout(timer)
@@ -31,25 +31,38 @@ box.onmouseleave = function() {
 	box.style.display = 'none';
 }
 
-var item = document.querySelector('.a');
-var box = document.querySelector('.sub-nav');
+var phone = document.querySelector('.nav-phone');
+var sub = document.querySelector('.sub-nav');
+var toggle = document.querySelector('.toggle');
 var timer = null;
-item.onmouseenter = function() {
+phone.onmouseenter = function() {
 	clearTimeout(timer)
-	box.style.display = 'block';
+	//	sub.style.display = 'block';
+	$('.sub-nav').addClass('sub-nav-animation')
+	$('.sub-nav').addClass('sub-nav-show')
 	$('.header-wrapper').addClass('toggle')
-	$('.header-wrapper').style.color = red;
+	$('.nav li a').addClass('toggle-a')
+	$('.logo a').css('background-image', 'url(images/logo2.png)')
+	$('.header-item2').css('background-image', 'url(images/img40.png)')
+	$('.header-item').css('background-image', 'url(images/img41.png)')
 }
-item.onmouseleave = function() {
+sub.onmouseleave = function() {
+	//	$('.sub-nav').stop().slideToggle();
 	timer = setTimeout(function() {
-	box.style.display = 'none';
-	},100)
+		//	sub.style.display = 'none';
+		$('.sub-nav').removeClass('sub-nav-animation')
+		$('.sub-nav').removeClass	('sub-nav-show')
+		$('.header-wrapper').removeClass('toggle')
+		$('.nav li a').removeClass('toggle-a')
+		$('.logo a').css('background-image', '')
+		$('.header-item2').css('background-image', '')
+		$('.header-item').css('background-image', '')
+	}, 100)
 }
-box.onmouseenter = function() {
-	clearTimeout(timer)
-	box.style.display = 'block';
-}
-box.onmouseleave = function() {
-	box.style.display = 'none';
-}
-
+//sub.onmouseenter = function() {
+//	clearTimeout(timer)
+//	box.style.display = 'block';
+//}
+//sub.onmouseleave = function() {
+//	box.style.display = 'none';
+//}
