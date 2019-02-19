@@ -7,21 +7,19 @@
          exit('非法访问！');
      };
      $username = $_POST['username'];
-     //$password = $_POST['password'];
+     $password = $_POST['password'];
      $sql = 'select * from user';
     // var_dump($sql);
      $row = $conn -> query($sql);
      //var_dump($row);
-     $check_query = "select id from user where username='$username'";
+     $check_query = "select id from user where username='$username' and password='$password'";
      //$check_query = "select id from user where username='$username' and password = '$password'";
      //var_dump($check_query);
      $result = $conn -> query($check_query);
      //var_dump($result);
      if($result->num_rows >0){
-         exit('登录成功');
+         exit('登录成功。<a href="../index/index">点击登录</a>');
      }else{
-          
-         
-        
+          exit('注册失败。<a href="javascript:history.back(-1);">返回</a>');  
      };
 ?>

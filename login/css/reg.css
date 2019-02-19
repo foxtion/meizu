@@ -13,7 +13,7 @@
 	background: white;
 }
 #haed h1 a{
-	display: inline-block;
+	display: block;
 	width: 109px;
 	height: 19px;
 	background: url(../img/base.png) -4px -4px;
@@ -33,69 +33,24 @@
 	margin: 0 auto;
 	position: relative;
 }
-.denglu{ 
+.zhuce{ 
 	width: 368px;
-	background:white;
+	background: white;
 	position:absolute;
 	right: 66px;
 	top: 122px;
-	
-	
-}
 
-h3{
+}
+.zhuce h2{
 	font-size: 18px;
+	color: #387aff;
 	text-align: center;
 	margin-top: 72px;
+	margin-bottom: 80px;
 }
-h3 span{
-	display: inline-block;
-	width: 36px;
-	height: 14px;
-	
+.zhuce form{
+	margin:  0 0 0 36px;
 }
-
-.denglu h3 a:nth-of-type(1) i{
-	color: black;
-	cursor:pointer
-}
-.denglu h3 a:nth-of-type(2) i{
-	color: #7f7f7f;
-	cursor:pointer
-}
-.ma h3 a:nth-of-type(1) i{
-    color: #7f7f7f;
-	cursor:pointer
-}
-.ma h3 a:nth-of-type(2) i{
-	color: black;
-	cursor:pointer
-}
-h3 span:nth-of-type(1){
-	border-right: 1px solid #b3abab;
-}
-h3 span:nth-of-type(2){
-	border-left: 1px solid #b3abab;
-}
-
-
-
-
-.ma{ 
-	width: 368px;
-	background:white;
-	position:absolute;
-	right: 66px;
-	top: 122px;	
-	
-}
-.ewm{
-	background: url(../img/mzQrShow_03.jpg) no-repeat;
-	width: 245px;
-	height: 245px;
-	margin-left: 25px;
-}
-
 .zzyz{
 	width: 296px;
 	height: 33px;
@@ -130,33 +85,43 @@ h3 span:nth-of-type(2){
 	top: 10px;
 	cursor:pointer
 }
-form{
-	margin: 40px 0 0 36px;
-}
-.ma p{
-	margin:20px 45px 30px 45px;
-	color: #7f7f7f;
-	font-size: 16px;
-}
 .all{
 	height: 46px;
 	width: 296px;
 	border: 1px solid #dadada;
-	margin-top: 20px;
 }
 .alow{
 	width: 276px;
-	height: 46px;
+	height: 20px;
+	margin-top: 16px;
+}
+.alow span{
+	display: inline-block;
+	width: 62px;
+	height: 20px;
+	border-right: 1px solid #dadada;
+	float: left;
+	cursor: pointer;
 	
 }
-
-.alow input{
+.alow span input{
 	border: 0;
-	width: 100%;
-	height: 100%;
+	width: 36px;
+	height: 20px;
+	
 	margin-left: 12px;
+	float: left;
 }
-
+.alow span i{
+	display: inline-block;
+	width: 14px;
+	height: 8px;
+	background: url(../img/arrow-down.png) no-repeat;
+	position: relative;
+	top: 6px;
+	float: left;
+	
+}
 .inp{
 	float: left;
 	height: 18px;
@@ -165,11 +130,34 @@ form{
 	margin-left: 12px;
 	
 }
+
+.pasd{
+	height: 46px;
+	width: 296px;
+	border: 1px solid #dadada;
+	margin-top: 5px;
+}
+.pasd input{
+	height: 80%;
+	width: 280px;
+	border: 0px;
+	margin-top: 6px;
+	margin-left: 16px;
+}
+.zhuce form p{
+	color: #515151;
+	font-size: 12px;
+	margin: 50px 33px 5px 0px;
+}
+.zhuce form p span{
+	color: #387aff;
+}
+
 .btn{
 	width: 300px;
 	height: 46px;
 	background: #387aff;
-	margin-top: 38px;
+	
 	border: 0;
 	color: white;
 	border-radius: 5px;
@@ -178,21 +166,12 @@ form{
 .wj{
 	width: 300px;
 	height: 100%;
-	margin: 12px 0 16px 0;
+	margin: 12px 0 26px 0px;
 	display: flex;
 	justify-content: space-between;
 }
 .wj span a{
 	color: #387aff;
-}
-.iphone{
-	position: absolute;
-	right: 11px;
-	top: 11px;
-	display: block;
-	width: 35px;
-	height: 35px;
-	background: url(../img/phone.png) no-repeat;
 }
 #warrper_foot{
 	height: 132px;

@@ -38,15 +38,14 @@
 	background: white;
 	position:absolute;
 	right: 66px;
-	top: 220px;
+	top: 122px;
 
 }
 .zhuce h2{
 	font-size: 18px;
 	color: #387aff;
 	text-align: center;
-	margin-top: 72px;
-	margin-bottom: 80px;
+	margin: 65px 0px;
 }
 .zhuce form{
 	margin:  0 0 0 36px;
@@ -85,51 +84,6 @@
 	top: 10px;
 	cursor:pointer
 }
-.all{
-	height: 46px;
-	width: 296px;
-	border: 1px solid #dadada;
-}
-.alow{
-	width: 276px;
-	height: 20px;
-	margin-top: 16px;
-}
-.alow span{
-	display: inline-block;
-	width: 62px;
-	height: 20px;
-	border-right: 1px solid #dadada;
-	float: left;
-	cursor: pointer;
-	
-}
-.alow span input{
-	border: 0;
-	width: 36px;
-	height: 20px;
-	
-	margin-left: 12px;
-	float: left;
-}
-.alow span i{
-	display: inline-block;
-	width: 14px;
-	height: 8px;
-	background: url(../img/arrow-down.png) no-repeat;
-	position: relative;
-	top: 6px;
-	float: left;
-	
-}
-.inp{
-	float: left;
-	height: 18px;
-	width: 200px;
-	border: 0;
-	margin-left: 12px;
-	
-}
 
 .pasd{
 	height: 46px;
@@ -144,10 +98,15 @@
 	margin-top: 6px;
 	margin-left: 16px;
 }
+.pasd a{
+	position: relative;
+	top: -26px;
+	right: -254px;
+}
 .zhuce form p{
 	color: #515151;
 	font-size: 12px;
-	margin: 50px 33px 5px 0px;
+	margin: 50px 33px 84px 0px;
 }
 .zhuce form p span{
 	color: #387aff;
@@ -157,11 +116,11 @@
 	width: 300px;
 	height: 46px;
 	background: #387aff;
-	
 	border: 0;
 	color: white;
 	border-radius: 5px;
 	cursor: pointer;
+	margin-top: 50px;
 }
 .wj{
 	width: 300px;
