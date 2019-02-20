@@ -117,8 +117,21 @@
     line-height: 10px;
     background: url(../images/img04.png) no-repeat;
     background-position-y: center;
-        
 }   
+.header-item1{
+	position: relative;
+    float: right;
+    margin: 27px 0 0 8px;
+    width: 29px;
+    height: 29px;
+    text-align: center;
+    font-size: 12px;
+    text-indent: 3px;
+    line-height: 10px;
+    background: url(../images/img23.png) no-repeat;
+    background-position-y: center;
+    background-size: 100%;
+}  
 .header-item2{
 	position: relative;
     float: right;
@@ -159,6 +172,7 @@
 	color: #000;
 }
 .sub-nav{
+	z-index: 1000;
     display: none;
     position: absolute;
     left: 0;
@@ -182,11 +196,12 @@
     font-size: 12px;
 }
 .sub-nav__wrap ul li{
-	display: inline-block;
+	    display: inline-block;
     text-align: center;
     margin: 0;
     list-style: none;
-    padding: 5px 5px 20px;
+    *zoom: 1;
+    padding: 5px 0 20px;
     width: 142px;
     height: 140px;
     font-size: 12px;
@@ -196,36 +211,162 @@
 	font-size: 12px;
     width: 142px;
     color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     display: block;
     padding: 0s;
     cursor: pointer;
     position: relative;
+        z-index: 99;
 }
 .sub-nav__wrap ul li a i{
 	display: block;
     width: 120px;
     height: 120px;
     margin-bottom: 0;
+    margin-right: 0;
+}
+.sub-nav__wrap ul li:nth-of-type(1) a i{
     background: url(../images/img39.jpg) no-repeat;
     background-position: center bottom;
     background-size: 120px;
-    background-size:100%;
 }
-/*.sub-nav__wrap ul li a span{
+.sub-nav__wrap ul li:nth-of-type(2) a i{
+    background: url(../images/img42.jpg) no-repeat;
+    background-position: center bottom;
+    background-size: 120px;
+}
+.sub-nav__wrap ul li:nth-of-type(3) a i{
+    background: url(../images/img43.png) no-repeat;
+    background-position: center bottom;
+    background-size: 120px;
+}
+.sub-nav__wrap ul li:nth-of-type(4) a i{
+    background: url(../images/img44.jpg) no-repeat;
+    background-position: center bottom;
+    background-size: 120px;
+}
+.sub-nav__wrap ul li:nth-of-type(5) a i{
+    background: url(../images/img46.png) no-repeat;
+    background-position: center bottom;
+    background-size: 120px;
+}
+.sub-nav__wrap ul li:nth-of-type(6) a i{
+    background: url(../images/img42.jpg) no-repeat;
+    background-position: center bottom;
+    background-size: 120px;
+}
+.sub-nav__wrap ul li:nth-of-type(7) a i{
+    background: url(../images/img39.jpg) no-repeat;
+    background-position: center bottom;
+    background-size: 120px;
+}
+.sub-nav__wrap ul li:nth-of-type(8) a i{
+    background: url(../images/img44.jpg) no-repeat;
+    background-position: center bottom;
+    background-size: 120px;
+}
+.header-wrapper .sub-nav__wrap a span{
 	position: absolute;
     top: 0;
     left: 0;
     display: block;
     height: 100%;
     width: 100%;
-    opacity: .01;
+    opacity: 0.01;
     filter: alpha(opacity=1);
     background-color: #fff;
-}*/
+}
+.header-wrapper .sub-nav-ul:hover a span{
+	opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+}
+.header-wrapper .sub-nav__wrap a:hover span{
+	display: none;
+	opacity: 1;
+}
 .sub-nav__wrap ul li a em{
 	display: block;
     color: #333;
     font-style: normal;
+}
+
+/*#meizu-header-sub-download {
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    left: 0;
+    top: 65px;
+    z-index: 1001;
+    height: 0;
+    overflow: hidden;
+}*/
+.header-wrapper .meizu-header-sub {
+    z-index: 1000;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 82px;
+    background-color: #fff;
+    min-width: 100%;
+    overflow: hidden;
+    height: 320px;
+	transition: all .3s ease;
+}
+#meizu-header-sub-download .app-down-content {
+    position: relative;
+    width: 1240px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+#meizu-header-sub-download img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+.header-wrapper .meizu-header-sub a {
+    font-size: 12px;
+    width: 142px;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    padding: 0s;
+    cursor: pointer;
+    position: relative;
+    z-index: 99;
+}
+#meizu-header-sub-download .app-down-content .app-down-link {
+    position: absolute;
+    width: 125px;
+    height: 28px;
+    padding: 0;
+}
+#meizu-header-sub-download .app-down-content .app-down-link-2 {
+    left: 375px;
+    top: 217px;
+}
+#meizu-header-sub-download .app-down-content .app-down-link-3 {
+    right: 117px;
+    top: 217px;
+}
+
+#meizu-header-sub-download .app-down-content .app-down-link img {
+    width: 100%;
+    height: auto;
+}
+#meizu-header-container .meizu-header-sub a img {
+    display: block;
+    height: 85px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+#meizu-header-sub-download img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
 }
 .sub-nav-show{
 	height: auto;
@@ -234,6 +375,9 @@
 }
 .sub-nav-animation{
 	animation: sub-nav-show 0.5s;
+}
+.app-down-animation{
+	animation: app-down-show 0.5s;
 }
 .header-wrapper .toggle-a{
 	/*background: red;*/
@@ -245,5 +389,13 @@
 	}
 	to {
 		height: 183px;
+	}
+}
+@keyframes app-down-show{
+	from {
+		height: 0;
+	}
+	to {
+		height: 320px;
 	}
 }

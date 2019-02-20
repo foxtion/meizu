@@ -17,9 +17,22 @@
      //var_dump($check_query);
      $result = $conn -> query($check_query);
      //var_dump($result);
+     $url = "../../index/success.html";
+     $url1 = "javascript:history.back(-1)";
      if($result->num_rows >0){
-         exit('登录成功。<a href="../index/index">点击登录</a>');
+         //exit('登录成功。<a href="../../index/success.html">点击登录</a>');
+        // echo "<script>setTimeout(\"href='../../index/success.html/'\",200);</script>";
+        echo "<script language='javascript' type='text/javascript'>";
+		echo "window.location.href='$url'";
+		echo "</script>";
+
      }else{
-          exit('注册失败。<a href="javascript:history.back(-1);">返回</a>');  
+          //exit('登录失败。<a href="javascript:history.back(-1);">返回</a>');  
+          //echo "<script>setTimeout(\"href='javascript:history.back(-1)/'\",200);</script>";
+          echo "<script language='javascript' type='text/javascript'>";
+		echo "window.location.href='$url1'";
+		echo "</script>";
      };
+     
+     
 ?>
