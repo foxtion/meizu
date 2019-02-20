@@ -11,6 +11,44 @@ var swiper = new Swiper('.swiper-container', {
 });
 console.log(swiper);
 
+var bg = document.querySelector('.Gintama')
+bg.onclick = function() {
+	 location = "../shopcar/shopcar.html";
+	console.log(111)
+}
+var bg = document.querySelector('.SteinsGate')
+bg.onclick = function() {
+	 location = "../login/login.html";
+	console.log(111)
+}
+var bg = document.querySelector('.Unicorn')
+bg.onclick = function() {
+	 location = "../login/login.html";
+	console.log(111)
+}
+var bg = document.querySelector('.Berserk')
+bg.onclick = function() {
+	 location = "../login/login.html";
+	console.log(111)
+}
+var bg = document.querySelector('.SummerWars')
+bg.onclick = function() {
+	 location = "../login/login.html";
+	console.log(111)
+}
+var bg = document.querySelector('.Akito')
+bg.onclick = function() {
+	 location = "../login/login.html";
+	console.log(111)
+}
+var bg = document.querySelector('.Eva')
+bg.onclick = function() {
+	 location = "../login/login.html";
+	console.log(111)
+}
+
+
+
 var item = document.querySelector('.header-item');
 var box = document.querySelector('.header-item-box');
 var timer = null;
@@ -158,7 +196,7 @@ sub.onmouseleave = function() {
 	timer = setTimeout(function() {
 		//	sub.style.display = 'none';
 		$('.sub-nav').removeClass('sub-nav-animation')
-		$('.sub-nav').removeClass	('sub-nav-show')
+		$('.sub-nav').removeClass('sub-nav-show')
 		$('.header-wrapper').removeClass('toggle')
 		$('.nav li a').removeClass('toggle-a')
 		$('.sub-nav ul li a').eq(0).find('i').css({'background':'','background-size':''})
@@ -250,49 +288,51 @@ sub.onmouseleave = function() {
 	}, 100)
 }
 //APP下载hover
-//var app = document.querySelector('.app-up');
-//var up = document.querySelector('#meizu-header-sub-download');
-//var toggle = document.querySelector('.toggle');
-//var timer = null;
-//app.onmouseenter = function() {
-//	up.style.display = 'block';
-//	clearTimeout(timer)
-//	$('#meizu-header-sub-download').addClass('app-down-animation')
-//	$('.header-wrapper').addClass('toggle')
-//	$('.nav li a').addClass('toggle-a')
-//	$('.logo a').css('background-image', 'url(images/logo2.png)')
-//	$('.header-item2').css('background-image', 'url(images/img40.png)')
-//	$('.header-item').css('background-image', 'url(images/img41.png)')
-//}
-//app.onmouseleave = function() {
-//	timer = setTimeout(function() {
-//		up.style.display = 'none';
-//		$('#meizu-header-sub-download').removeClass('app-down-animation')
-//		$('.header-wrapper').removeClass('toggle')
-//		$('.nav li a').removeClass('toggle-a')
-//		$('.logo a').css('background-image', '')
-//		$('.header-item2').css('background-image', '')
-//		$('.header-item').css('background-image', '')
-//	}, 100)
-//}
-//up.onmouseenter = function() {
-//	up.style.display = 'block';
-//	clearTimeout(timer)
-//	$('#meizu-header-sub-download').addClass('app-down-animation')
-//	$('.header-wrapper').addClass('toggle')
-//	$('.nav li a').addClass('toggle-a')
-//	$('.logo a').css('background-image', 'url(images/logo2.png)')
-//	$('.header-item2').css('background-image', 'url(images/img40.png)')
-//	$('.header-item').css('background-image', 'url(images/img41.png)')
-//}
-//up.onmouseleave = function() {
-//	timer = setTimeout(function() {
-//		up.style.display = 'none';
-//		$('#meizu-header-sub-download').removeClass('app-down-animation')
-//		$('.header-wrapper').removeClass('toggle')
-//		$('.nav li a').removeClass('toggle-a')
-//		$('.logo a').css('background-image', '')
-//		$('.header-item2').css('background-image', '')
-//		$('.header-item').css('background-image', '')
-//	}, 100)
-//}
+var app = document.querySelector('.app-up');
+var up = document.querySelector('#meizu-header-sub-download');
+var toggle = document.querySelector('.toggle');
+var timer = null;
+app.onmouseenter = function() {
+	up.style.display = 'block';
+	clearTimeout(timer)
+	$('#meizu-header-sub-download').addClass('app-down-animation')
+	$('.header-wrapper').addClass('toggle')
+	$('.nav li a').addClass('toggle-a')
+	$('.logo a').css('background-image', 'url(images/logo2.png)')
+	$('.header-item2').css('background-image', 'url(images/img40.png)')
+	$('.header-item').css('background-image', 'url(images/img41.png)')
+}
+app.onmouseleave = function() {
+	timer = setTimeout(function() {
+		up.style.display = 'none';
+		$('#meizu-header-sub-download').removeClass('app-down-animation')
+		$('.header-wrapper').removeClass('toggle')
+		$('.nav li a').removeClass('toggle-a')
+		$('.logo a').css('background-image', '')
+		$('.header-item2').css('background-image', '')
+		$('.header-item').css('background-image', '')
+	}, 100)
+}
+up.onmouseenter = function() {
+	up.style.display = 'block';
+	clearTimeout(timer)
+	$('#meizu-header-sub-download').addClass('app-down-animation')
+	$('.header-wrapper').addClass('toggle')
+	$('.nav li a').addClass('toggle-a')
+	$('.logo a').css('background-image', 'url(images/logo2.png)')
+	$('.header-item2').css('background-image', 'url(images/img40.png)')
+	$('.header-item').css('background-image', 'url(images/img41.png)')
+}
+up.onmouseleave = function() {
+	timer = setTimeout(function() {
+		up.style.display = 'none';
+		$('#meizu-header-sub-download').removeClass('app-down-animation')
+		$('.header-wrapper').removeClass('toggle')
+		$('.nav li a').removeClass('toggle-a')
+		$('.logo a').css('background-image', '')
+		$('.header-item2').css('background-image', '')
+		$('.header-item').css('background-image', '')
+	}, 100)
+}
+
+

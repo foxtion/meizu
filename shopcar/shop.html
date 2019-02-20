@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/shop.css"/>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+	</head>
+
+	<body>
+		<div class="layout-header clearfix layout-header-order login">
+			<div class="mzcontainer">
+				<div class="layout-header-logo">
+					<a href="#" class="layout-header-logo-link">
+						<img src="../app/images/logo2.png" style="max-width: 125px;margin-top: 28px;" />
+					</a>
+				</div>
+				<ul class="layout-header-bread">
+						<li class="layout-header-bread-block active">
+							购物车
+						</li>
+						<li class="layout-header-bread-block">
+							购物车
+						</li>
+						<li class="layout-header-bread-block">
+							购物车
+						</li>
+						<li class="layout-header-bread-block">
+							购物车
+						</li>
+					</ul>
+					<ul class="layout-header-right">
+						<li class="layout-header-right-item">
+							<a href="#">我的订单</a>
+						</li>
+					</ul>
+			</div>
+		</div>
+		<div class="cart" id="cart">
+			<div class="mzcontainer">
+				<table class="cart-header">
+					<tbody>
+						<tr>
+							<td class="cart-col-select">
+								<div class="cart-select-all JSelectAll">
+									<div class="mz-checkbox"></div>
+									<span class="cart-select-title">全选</span>
+								</div>
+							</td>
+							<td class="cart-col-price">单价(元)</td>
+							<td class="cart-col-number">数量</td>
+							<td class="cart-col-total">小计(元)</td>
+							<td class="cart-col-ctrl show" id="J-cartHearCtrl">编辑</td>
+						</tr>
+					</tbody>
+				</table>
+				<ul class="cart-merchant-list">
+					<li class="cart-merchant">
+						<div class=" cart-merchant-header ">
+							<div class="cart-select-all">
+								<div class="mz-checkbox"></div>
+								<div class="cart-select-title">魅族</div>
+							</div>
+							<div class="cart-select-fee">
+								<span class="cart-free">已免邮费</span>
+							</div>
+						</div>
+						<table class="cart-merchant-body">
+							<tr class="cart-more-buy">
+								<td class="cart-product-buy" colspan="5">
+									<div class="more-buy-tag">
+										<span>加价购</span>
+									</div>
+									<span class="more-buy-tips">另外再加15元起，即可换购超值商品</span>
+									<span class="more-buy-skip">立即加购 ></span>
+								</td>
+							</tr>
+							<tr class="cart-product hasTheBinder">
+								<td class="cart-col-select">
+									<div class="mz-checkbox"></div>
+									<a href="#" class="cart-product-link">
+										<img src="../app/images/icon09.png" class="cart-product-img"/>
+									</a>
+									<a href="#" class="cart-product-link cart-product-info">
+										<p class="cart-product-item-name">魅族 V8 高配版</p>
+										<p class="cart-product-package-name">套餐一</p>
+										<p class="cart-product-desc">全网通公开版 雅金 4+64GB</p>
+									</a>
+								</td>
+								<td class="cart-col-price">
+									<p>
+										<span class="cart-product-price">
+											1298.00
+										</span>
+									</p>
+								</td>
+								<td class="cart-col-number" style="text-align: center; margin-left: 20px;">
+									<div class="cart-product-number-adder">
+										<div class="mz-adder">
+											<button class="mz-adder-subtract"></button>
+											<div class="mz-adder-num">
+												<input type="text" class="mz-adder-input" value="1" />
+											</div>
+											<button class="mz-adder-add disabled"></button>
+										</div>
+									</div>
+								</td>
+								<td class="cart-col-total">
+									<span class="cart-product-price total main-goods">
+										4990.00
+									</span>
+								</td>
+								<td class="cart-col-ctrl">
+									<div class="cart-product-remove "></div>
+								</td>
+							</tr>
+						</table>
+					</li>
+				</ul>
+			</div>
+			<div class="cart-footer fixed">
+				<div class="mzcontainer">
+					<div class="cart-footer-left">
+						<div class="cart-select-all JSelectAll">
+							<div class="mz-checkbox"></div>
+							<span class="cart-select-title">全选</span>
+						</div>
+						<span class="cart-remove-selected">删除选中的商品</span>
+						<span class="cart-footer-count">
+							共
+							<span class="cart-footer-num" id="totalCount">6</span> 件商品，已选择
+						<span class="cart-footer-num blue" id="totalSelectedCount">1</span> 件
+						</span>
+					</div>
+					<div class="cart-footer-right">
+						<span class="class=" cart-footer-sum "">
+							已优惠
+							<span class="cart-footer-num red" id="totalDiscount">0.00</span> 元，合计(不含运费)：
+						<span class="cart-footer-total" id="totalPrice">
+								1298.00
+							</span>
+						</span>
+						<div class="mz-btn success to-order-btn" id="cartSubmit">去结算
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--尾部-->
+		<div class="meizu-footer container">
+			<div class="meizu-foot-link">
+				<div class="meizu-foot-wrap">
+					<div class="meizu-row">
+						<ul class="meizu-footer-service">
+							<li>
+								<a href="#">
+									<img src="../app/images/img24.png" />
+									<span>满80免运费</span>
+								</a>
+							</li>
+
+							<li>
+								<a href="#">
+									<img src="../app/images/img37.png" />
+									<span>100+ 城市次日送达</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="../app/images/img34.png" />
+									<span>7天无理由退货</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="../app/images/img30.png" />
+									<span>15天换货保障</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="../app/images/img31.png" />
+									<span>1年免费保修</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="../app/images/img38.png" />
+									<span>上门快修</span>
+								</a>
+							</li>
+						</ul>
+						<div class="onlive-server">
+							<span>周一至周日 7:30-24:00</span>
+							<p class="tel">400-788-3333</p>
+							<a href="#" class="onlive-btn">在线客服</a>
+						</div>
+					</div>
+					<div class="footer-hr"></div>
+					<div class="meizu-footer-co">
+						<div class="meizu-row2">
+							<div class="meizu-footer-info">
+								<div class="meizu-footer-info-left">
+									<ul>
+										<li>
+											<a href="#">了解魅族</a>
+										</li>
+										<li>
+											<a href="#">加入我们</a>
+										</li>
+										<li>
+											<a href="#">联系我们</a>
+										</li>
+										<li>
+											<a href="#">Flyme</a>
+										</li>
+										<li>
+											<a href="#">魅族社区</a>
+										</li>
+										<li>
+											<a href="#">天猫旗舰店</a>
+										</li>
+										<li>
+											<a href="#">问题反馈</a>
+										</li>
+										<li>
+											<a href="#">线上销售权名单公示</a>
+										</li>
+										<li>
+											<a href="#">出版物经营许可证</a>
+										</li>
+										<li class="no-border meizu-footer-langList">
+											<span class="meizu-footer-language">
+												<a href="#" class="button-language">
+													<i class="icon-lang-logo icon-lang-logo-cn"></i>
+													简体中文
+												</a>
+											</span>
+										</li>
+									</ul>
+									<div class="meizu-footer-language-wp"></div>
+									<div class="meizu-footer-certificate">
+										©2019 Meizu Telecom Equipment Co.,Ltd.All rights reserved.
+										<a href="#">粤ICP备13003602号</a>
+										<a href="#">合字B2-20170010 </a>
+										<a href="#">营业执照</a>
+										<a href="#">法律声明</a>
+										<span class="footer-info-record">
+											<i></i>
+											 粤公网安备 44049102496009 号
+										</span>
+										<a href="#" class="footer-info-license">
+											<i></i>
+										</a>
+										<a href="#" class="footer-info-wel">
+											<i></i>
+										</a>
+										<a href="#" class="footer-info-trust">
+											<i></i>
+										</a>
+									</div>
+								</div>
+								<div class="ii-subscribe">
+									<a href="#">
+										<img src="../app/images/icon11.png" />
+										<i class="ii-subscribe-img"></i>
+									</a>
+									<span class="ii-hr"></span>
+									<a href="#">
+										<img src="../app/images/img11.jpg" />
+										<i class="ii-subscribe-img"></i>
+									</a>
+									<span class="ii-hr"></span>
+									<a href="#">
+										<i class="ii-subscribe-img"></i>
+									</a>
+									<span class="ii-hr"></span>
+									<a href="#">
+										<i class="ii-subscribe-img"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
