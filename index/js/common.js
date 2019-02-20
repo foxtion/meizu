@@ -69,6 +69,25 @@ box.onmouseleave = function() {
 	box.style.display = 'none';
 }
 
+var item = document.querySelector('.header-item2');
+var box = document.querySelector('.header-item-box');
+var timer = null;
+item.onmouseenter = function() {
+	clearTimeout(timer)
+	box.style.display = 'block';
+}
+item.onmouseleave = function() {
+	timer = setTimeout(function() {
+		box.style.display = 'none';
+	}, 100)
+}
+box.onmouseenter = function() {
+	clearTimeout(timer)
+	box.style.display = 'block';
+}
+box.onmouseleave = function() {
+	box.style.display = 'none';
+}
 //手机hover
 var phone1 = document.querySelectorAll('.nav-phone')[0];
 var sub1 = document.querySelector('.sub-nav');
@@ -91,6 +110,7 @@ phone1.onmouseenter = function() {
 	$('.logo a').css('background-image', 'url(images/logo2.png)')
 	$('.header-item2').css('background-image', 'url(images/img40.png)')
 	$('.header-item').css('background-image', 'url(images/img41.png)')
+	$('.header-item1').css('background-image', 'url(images/img23.png)')
 }
 sub1.onmouseleave = function() {
 	timer = setTimeout(function() {
@@ -143,6 +163,7 @@ phone.onmouseenter = function() {
 	$('.logo a').css('background-image', 'url(images/logo2.png)')
 	$('.header-item2').css('background-image', 'url(images/img40.png)')
 	$('.header-item').css('background-image', 'url(images/img41.png)')
+	$('.header-item1').css('background-image', 'url(images/img23.png)')
 }
 sub.onmouseleave = function() {
 	//	$('.sub-nav').stop().slideToggle();
@@ -190,6 +211,7 @@ phone.onmouseenter = function() {
 	$('.logo a').css('background-image', 'url(images/logo2.png)')
 	$('.header-item2').css('background-image', 'url(images/img40.png)')
 	$('.header-item').css('background-image', 'url(images/img41.png)')
+	$('.header-item1').css('background-image', 'url(images/img23.png)')
 }
 sub.onmouseleave = function() {
 	//	$('.sub-nav').stop().slideToggle();
@@ -235,6 +257,7 @@ phone.onmouseenter = function() {
 	$('.logo a').css('background-image', 'url(images/logo2.png)')
 	$('.header-item2').css('background-image', 'url(images/img40.png)')
 	$('.header-item').css('background-image', 'url(images/img41.png)')
+	$('.header-item1').css('background-image', 'url(images/img23.png)')
 }
 phone.onmouseleave = function() {
 	timer = setTimeout(function() {
@@ -301,6 +324,7 @@ app.onmouseenter = function() {
 	$('.logo a').css('background-image', 'url(images/logo2.png)')
 	$('.header-item2').css('background-image', 'url(images/img40.png)')
 	$('.header-item').css('background-image', 'url(images/img41.png)')
+	$('.header-item1').css('background-image', 'url(images/img23.png)')
 }
 app.onmouseleave = function() {
 	timer = setTimeout(function() {

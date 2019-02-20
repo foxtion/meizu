@@ -128,8 +128,9 @@
     font-size: 12px;
     text-indent: 3px;
     line-height: 10px;
-    background: url(../images/img03.png) no-repeat;
+    background: url(../images/img23.png) no-repeat;
     background-position-y: center;
+    background-size: 100%;
 }  
 .header-item2{
 	position: relative;
