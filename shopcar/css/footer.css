@@ -239,7 +239,7 @@
     height: 18px;
     top: 0;
     left: 0;
-    background-image: url(../../app/images/img23.png) no-repeat;
+    background-image: url(../images/img23.png) no-repeat;
     background-size: cover;
 }
 .meizu-footer .meizu-footer-info-left i {
@@ -256,12 +256,12 @@
 }
 .meizu-footer .meizu-footer-info-left .footer-info-record i{
 	width: 14px;
-    background-image: url(../../app/images/img35.png);
+    background-image: url(../images/img35.png);
     background-size: 96%;
 }
 .meizu-footer .meizu-footer-info-left .footer-info-license i {
     width: 20px;
-    background-image: url(../../app/images/img25.png);
+    background-image: url(../images/img25.png);
     background-size: 96%;
 }
 .meizu-footer .meizu-footer-info-left .footer-info-wel {
@@ -269,7 +269,7 @@
 }
 .meizu-footer .meizu-footer-info-left .footer-info-wel i {
     width: 20px;
-    background-image: url(../../app/images/img28.png);
+    background-image: url(../images/img28.png);
     background-size: 96%;   
 }
 .meizu-footer .meizu-footer-info-left .footer-info-trust{
@@ -277,49 +277,49 @@
 }
 .meizu-footer .meizu-footer-info-left .footer-info-trust i {
     width: 25px;
-    background-image: url(../../app/images/img29.png);
+    background-image: url(../images/img29.png);
     background-size: 96%;   
 }
 .meizu-footer .meizu-footer-info .ii-subscribe a:nth-of-type(1) .ii-subscribe-img{
-	background-image: url(../../app/images/img25.png);
+	background-image: url(../images/img25.png);
 	background-size: 96%;
 }
 .meizu-footer .meizu-footer-info .ii-subscribe a:nth-of-type(2) .ii-subscribe-img{
-	background-image: url(../../app/images/img29.png);
+	background-image: url(../images/img29.png);
 	background-size: 96%;
 }
 .meizu-footer .meizu-footer-info .ii-subscribe a:nth-of-type(3) .ii-subscribe-img{
-	background-image: url(../../app/images/img28.png);
+	background-image: url(../images/img28.png);
 	background-size: 96%;
 }
 .meizu-footer .meizu-footer-info .ii-subscribe a:nth-of-type(4) .ii-subscribe-img{
-	background-image: url(../../app/images/img35.png);
+	background-image: url(../images/img35.png);
 	background-size: 96%;
 }
 .meizu-footer .meizu-footer-info .ii-subscribe a:nth-of-type(1):hover img{
 	display: block;
 }
 .meizu-footer .meizu-footer-info .ii-subscribe a:nth-of-type(1):hover .ii-subscribe-img{
-    background-image: url(../../app/images/img32.png);
+    background-image: url(../images/img32.png);
 }
 .meizu-footer .meizu-footer-info .ii-subscribe a:nth-of-type(2):hover img{
 	display: block;
 }
 .meizu-footer .meizu-footer-info .ii-subscribe a:nth-of-type(2):hover .ii-subscribe-img{
-    background-image: url(../../app/images/img36.png);
+    background-image: url(../images/img36.png);
 }
 .meizu-footer .meizu-footer-info .ii-subscribe a:nth-of-type(3):hover .ii-subscribe-img{
-    background-image: url(../../app/images/img33.png);
+    background-image: url(../images/img33.png);
 }
 .meizu-footer .meizu-footer-info .ii-subscribe a:nth-of-type(4):hover .ii-subscribe-img{
-    background-image: url(../../app/images/img26.png);
+    background-image: url(../images/img26.png);
 }
 .meizu-footer .meizu-footer-info-left  .footer-info-license:hover i{
-    background-image: url(../../app/images/img32.png);
+    background-image: url(../images/img32.png);
 }
 .meizu-footer .meizu-footer-info-left .footer-info-wel:hover i{
-    background-image: url(../../app/images/img33.png);
+    background-image: url(../images/img33.png);
 }
 .meizu-footer .meizu-footer-info-left .footer-info-trust:hover i{
-    background-image: url(../../app/images/img36.png);
+    background-image: url(../images/img36.png);
 }
