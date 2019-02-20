@@ -1,65 +1,65 @@
-var shop_car = (function(){
-    var $box = document.querySelector('.main');
+var shopCar = (function () {
+    var $ul = document.querySelector('ul');
     return {
         init() {
-            this.getJson();
-            this.event()
+            this.event();
+            this.getData();
         },
         event() {
             var _this = this;
-            // 添加单击事件
-            $box.addEventListener('click', function(e){
-                e  = e || window.event;
-                var target = e.target || e.srcElement;
-                if(target.nodeName === 'BUTTON') {
-                    // 获取对应数据的索引
-                    var index = target.parentNode.getAttribute('index')
-                    _this.data.splice(index, 1);
-                    _this.setData();
-                    // 通过数据重新渲染dom
-                    _this.insertData(_this.data);
-                }
-            }, false)
-            $box.onchange = function(e) {
-                e  = e || window.event;
-                var target = e.target || e.srcElement;
+            $ul.oninput = function (e) {
+                e = e || window.event;
+                var target =  e.target || e.srcElement;
+                var index = target.parentNode.index;
                 if(target.nodeName === 'INPUT') {
-                    var index = target.parentNode.getAttribute('index')
-                    // 更新数量
-                    _this.data[index].count = target.value;
-                    _this.setData();
-                    // 通过数据重新渲染dom
+                    // 修改本地的数据
+                    // 获取当前数据
+                    var data = _this.data[index];
+                    // 修改对应数据的数量
+                    data.count = Number(target.value);
+                    // 更新本地数据
+                    localStorage.shopList = JSON.stringify(_this.data);
+                    // _this.setItem(data);
+                    // 修改小计
                     _this.insertData(_this.data);
+
+                } 
+            }
+            $ul.onclick = function(e) {
+                e = e || window.event;
+                var target =  e.target || e.srcElement;
+                var pNode = target.parentNode;
+                if(target.nodeName == 'BUTTON') {
+                    _this.data.splice(pNode.index, 1);
+                    console.log(_this.data);
+                    pNode.remove();
+                    localStorage.shopList = JSON.stringify(_this.data);
                 }
             }
         },
-        // 获取数据
-        getJson() {
+        getData() {
             var shopList = localStorage.shopList || '[]';
             shopList = JSON.parse(shopList);
-            this.insertData(shopList);
+            this.data = shopList;
+            console.log(shopList);
+            this.insertData(shopList)
+
         },
-        // 数据渲染
         insertData(data) {
-            this.data = data;
-            // var $str = '';
-            var $arr = [];
-            for(var i = 0; i < data.length; i++) {
-                var item = data[i];
-                $arr.push(` <div index=${i}>
-                    商品名称:<span class="shop-name">${item.name}</span><br />
-                    数量: <input class="shop-count" type="number" value="${item.count}" /><br />
-                    价格: <span class="shop-price">${item.price}</span><br />
-                    商品总价: <span class="shop-total">${item.price * item.count}</span>
-                    商品提示: <span class="shop-tip">${item.ps}</span>
-                    <button class="btn shop-btn-del">删除</button>
-                </div>`);
-            }
-            $box.innerHTML = $arr.join('');
-        },
-        setData() {
-            localStorage.shopList = JSON.stringify(this.data);
+            $ul.innerHTML = '';
+            data.forEach((item, index) => {
+                var $li = document.createElement('li');
+                $li.index = index;
+                $li.innerHTML = `
+                    商品名称:<span class='title'>${data[index].title}</span></br>
+                    商品价格<span class='price'>${data[index].price}</span></br>
+                    购买数量<input class="count" value=${data[index].count} placeholder="请输入数量" /></br>
+                    小计<span>${data[index].price * data[index].count}</span></br>
+                    <button>删除</button>
+                `
+                $ul.appendChild($li);
+            })
         }
     }
+
 }())
-shop_car.init();
