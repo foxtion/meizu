@@ -57,9 +57,21 @@
 	margin-left: 12px;
 }
 /* 头部结束  */
-#container{
-	background: #f6f8fb;
-    height: 70px;
+.fast-nav {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #f6f8fb;
+}
+.fixeds {
+    position: fixed!important;
+    top: 0;
+    left: 0;
+    z-index: 10001;
+    border-bottom: 1px solid #dedede;
+    opacity: .9;
+    display: block;
 }
 .-container{
 	background: #f6f8fb;
@@ -95,7 +107,9 @@
     top: 15px;
     font-size: 26px;
 }
-
+.fast-nav .ulist .item a:hover, .fast-nav .ulist .item a:hover{
+    color: #27b3ff;
+}
 .box {
       padding: 20px;
     }
@@ -327,12 +341,19 @@
 .property-service .property-service-suda {
     padding-top: 15px;
 }
+.property-service-suda {
+    height: 35px;
+}
 .property-service .property-service-suda .vm-metatit {
     line-height: 20px;
+}
+.property-service .vm-metatit {
+    line-height: 18px;
 }
 .site-selector {
     position: relative;
     float: left;
+    height: 20px;
 }
 .site-selector .text {
     display: inline-block;
@@ -347,6 +368,7 @@
 .site-selector .text i {
     font-size: 12px;
     padding-left: 8px;
+    display: inline-block;
 }
 .property-service .property-service-provider {
     margin-top: 5px;
@@ -356,13 +378,23 @@
     display: flex;
     line-height: 20px;
 }
+.mod-site{
+	height: 20px;
+}
+.property-service-provider{
+	height: ;
+}
 .property-service .property-service-provider .vm-kefu {
     margin-left: 10px;
     color: #27b3ff;
     display: flex;
 }
-
-.property-set-sale, .property-sibling-item {
+.property-sibling-item{
+	margin-top: 20px;
+    margin-bottom: -10px;
+    height: 104px;
+}
+.property-set-sale {
     margin-top: 20px;
     margin-bottom: -10px;
     height: 52px;
@@ -580,7 +612,9 @@
 .property-sibling{
 	height: 106px;
 }
+
 .property-set{
+	margin-top: -10px;
 	height: 292px;
 }
 .property-buy .property-buy-action {
@@ -1041,4 +1075,6 @@
 .meizu-footer .meizu-footer-info-left .footer-info-trust:hover i{
     background-image: url(../images/img36.png);
 }
-
+.shou{
+	cursor: pointer;
+}

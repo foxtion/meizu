@@ -1,25 +1,28 @@
 {
-    "code": 200,
+    "code": "0",
     "data": [{
             "id": 1,
-            "name": "魅族 8 高配版",
-            "taocan": "套餐一",
-            "jixing":"全网通公开版 雅金 4+64GB",
-            "price": 1299
+            "title": "牙刷",
+            "price": "26",
+            "src": "xxxxx.png"
         },
         {
             "id": 2,
-            "name": "魅族 v8 plus 高配版",
-            "taocan": "套餐二",
-            "jixing":"全网通公开版 银白 6+64GB",
-            "price": 1899
+            "title": "牙膏",
+            "price": "30",
+            "src": "xxxxx.png"
         },
         {
             "id": 3,
-            "name": "魅族 t16 顶配版",
-            "taocan": "套餐三",
-            "jixing":"全网通公开版 炫黑 6+128GB",
-            "price": 2299
+            "title": "毛巾",
+            "price": "16",
+            "src": "xxxxx.png"
+        },
+        {
+            "id": 4,
+            "title": "脸盆",
+            "price": "48",
+            "src": "xxxxx.png"
         }
     ]
 }
