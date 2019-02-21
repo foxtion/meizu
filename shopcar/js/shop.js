@@ -51,7 +51,7 @@
                                                 </a>
                                                 <a href="#" class="cart-product-link cart-product-info">
                                                     <p class="cart-product-item-name">${jsonData[key].name}</p>
-                                                    <p class="cart-product-package-name">${jsonData[key].color}</p>
+                                                    <p class="cart-product-package-name">${jsonData[key].tc}</p>
                                                     <p class="cart-product-desc">${jsonData[key].color},${jsonData[key].nc}</p>
                                                 </a>
                                             </td>
