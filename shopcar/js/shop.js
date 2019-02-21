@@ -10,19 +10,21 @@
                             show();
                         }
                         function btn(){
-                            if(!$(".yanse").text() || !$(".selected").text() || !$(".selected").text()){
+                            if(!$('.xinhao .selected').text() || !$('.ysfl .selected').text() || !$('.ncrl .selected').text() || !$('.xztc .selected').text()){
                                 alert("数据不能有空档");
                             }
                             else{
                                 jsonData.push({
-                                    name:$(".yanse").text(),
-                                    age:$(".selected").text(),
-                                    sex:$(".selected").text()
+                                    name:$('.xinhao .selected').text(),
+                                    col:$('.ysfl .selected').text(),
+                                    nc:$('.ncrl .selected').text(),
+                                    tc:$('.xztc .selected').text()
                                 });
                                 console.log(jsonData);
-                                $(".yanse").text("");
-                                $(".selected").text("");
-                                $(".selected").text("");
+                                $('.xinhao .selected').text()
+                                $('.ysfl .selected').text();
+                                $('.ncrl .selected').text();
+                                $('.xztc .selected').text();
                                 localStorage.setItem('data',JSON.stringify(jsonData));
                                 $(".tt").empty();
                                 show();
@@ -49,14 +51,14 @@
                                                 </a>
                                                 <a href="#" class="cart-product-link cart-product-info">
                                                     <p class="cart-product-item-name">${jsonData[key].name}</p>
-                                                    <p class="cart-product-package-name">${jsonData[key].age}</p>
-                                                    <p class="cart-product-desc">${jsonData[key].sex}</p>
+                                                    <p class="cart-product-package-name">${jsonData[key].color}</p>
+                                                    <p class="cart-product-desc">${jsonData[key].color},${jsonData[key].nc}</p>
                                                 </a>
                                             </td>
                                             <td class="cart-col-price">
                                                 <p>
                                                     <span class="cart-product-price">
-                                                    ${jsonData[key].sex}
+                                                    ${jsonData[key].color}
                                                 </span>
                                                 </p>
                                             </td>
@@ -73,7 +75,7 @@
                                             </td>
                                             <td class="cart-col-total">
                                                 <span class="cart-product-price total main-goods">
-                                                ${jsonData[key].sex}
+                                                ${jsonData[key].color}
                                             </span>
                                             </td>
                                             <td class="cart-col-ctrl">

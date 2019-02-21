@@ -102,7 +102,18 @@ var ziwangye = (function() {
 					$jian.classList.remove('disabled')
 				}
 			}
-			
+			var $btn_empty = document.querySelector('.btn-empty');
+			$btn_empty.onclick = function(){
+				name = $('.xinhao .selected').text();
+				col = $('.ysfl .selected').text();
+				nc = $('.ncrl .selected').text();
+				tc = $('.xztc .selected').text();
+				localStorage.tc = tc ;
+				localStorage.nc = nc;
+				localStorage.col = col;
+				localStorage.name = name;
+				alert('加入购物车成功');
+			}
 			var $btn_primary = document.querySelector('.btn-primary');
 			$btn_primary.onclick = function(){
 				name = $('.xinhao .selected').text();
