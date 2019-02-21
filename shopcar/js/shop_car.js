@@ -33,7 +33,12 @@ var shop_car = (function(){
                 }
             }
         },
-        // 获取数据
+		// 获取数据
+		getJson() {
+            var shopList = localStorage.shopList || '[]';
+            shopList = JSON.parse(shopList);
+            this.insertData(shopList);
+        },
         // 数据渲染
         insertData(localStorage) {
             // var $str = '';
@@ -53,7 +58,7 @@ var shop_car = (function(){
 									<td class="cart-col-select">
 										<div class="mz-checkbox"></div>
 										<a href="#" class="cart-product-link">
-											<img src="../app/images/icon09.png" class="cart-product-img" />
+											<img src="images/icon09.png" class="cart-product-img" />
 										</a>
 										<a href="#" class="cart-product-link cart-product-info">
 											<p class="cart-product-item-name">${localStorage.name}</p>
@@ -89,7 +94,10 @@ var shop_car = (function(){
 							</table>`);
             }
             $box.innerHTML = $arr.join('');
-        },
+		},
+		setData() {
+            localStorage.shopList = JSON.stringify(this.data);
+        }
     }
 }())
 shop_car.init();
