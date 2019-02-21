@@ -12,10 +12,26 @@
     $password = $_POST['password'];
     $url = "../login1.html";
     $url1 = "javascript:history.back(-1)";
+    if(!preg_match('/^1[3|4|5|8][0-9]\d{4,8}$/', $username)){
+		
+			//exit('注册失败。<a href="javascript:history.back(-1);">返回</a>');
+			echo "<script>alert('手机号码不符')</script>";
+			echo "<script language='javascript' type='text/javascript'>";
+			echo "window.location.href='$url1'";
+			echo "</script>";
+			exit;
+		//if(strlen($username)!=11){}
+		
+   }
     if(strlen($password)<6){
-        //exit('错误：密码长度不符合规定。<a href="javascript:history.back(-1);">返回</a>');
-        echo "<script>alert('错误：密码长度不符合规定')</script>";
-    };
+		//exit('注册失败。<a href="javascript:history.back(-1);">返回</a>');
+        echo "<script>alert('密码长度不符合规定')</script>";
+        echo "<script language='javascript' type='text/javascript'>";
+		echo "window.location.href='$url1'";
+		echo "</script>";
+       // exit('错误：密码长度不符合规定。<a href="javascript:history.back(-1);">返回</a>');
+	   exit;
+	}
     $sql = 'select * from user';
    // var_dump($sql);
     $row = $conn -> query($sql);
@@ -45,7 +61,6 @@
             //exit('注册失败。<a href="javascript:history.back(-1);">返回</a>');
             echo "<script>alert('注册失败，请重新注册，点击确定返回上一页')</script>";
             echo "<script language='javascript' type='text/javascript'>";
-            echo "注册失败，请重新注册...";
 			echo "window.location.href='$url'";
 			echo "</script>";
         }
