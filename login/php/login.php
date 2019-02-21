@@ -13,7 +13,6 @@
      $row = $conn -> query($sql);
      //var_dump($row);
      $check_query = "select id from user where username='$username' and password='$password'";
-     //$check_query = "select id from user where username='$username' and password = '$password'";
      //var_dump($check_query);
      $result = $conn -> query($check_query);
      //var_dump($result);
