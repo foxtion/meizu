@@ -1,0 +1,316 @@
+body,ol,ul,h1,h2,h3,h,h5,h6,p,th,td,dl,dd,form,fieldest,legend,input,textarea,select{margin:0;padding:0;}
+body,html{
+	font:14px "微软雅黑",arial;
+	background: #f2f2f2;
+}
+h1,h2,h3,h,h5,h6,b,strong{
+	font-weight: normal;
+	font-size: 100%;
+}
+i,em{
+	font-style: normal;	
+}
+
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+input{
+	outline: none;
+}
+
+
+.main{
+	width: 1000px;
+	height: 554px;
+	background:#f5f5f5;	
+	margin: 0 auto;
+}
+.one{
+	width: 1000px;
+	display:flex ;
+}
+.one ul li:nth-child(1){
+	background: url(../img/xmad_15232433421155_vCzhJ.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.one ul li:nth-child(2){
+	text-align: center;
+	position: relative;
+}
+.one ul li:nth-child(2) div{
+	width: 100%;
+	height: 180px;
+	background: url(../img/pms_1545286017.38639954!220x220.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.one ul li:nth-child(2) p{
+	color: #333333;
+	font-size: 12px;
+}
+.one ul li:nth-child(2) a{
+	color: #b0b0b0;
+	font-size: 12px;
+}
+.one ul li:nth-child(2) i{
+	color: #ff6700;
+	font-size: 12px;
+}
+
+
+
+.one ul li:nth-child(3){
+	text-align: center;
+	position: relative;
+}
+.one ul li:nth-child(3) div{
+	width: 100%;
+	height: 180px;
+	background: url(../img/pms_1545286017.38639954!220x220.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.one ul li:nth-child(3) p{
+	color: #333333;
+	font-size: 12px;
+}
+.one ul li:nth-child(3) a{
+	color: #b0b0b0;
+	font-size: 12px;
+}
+.one ul li:nth-child(3) i{
+	color: #ff6700;
+	font-size: 12px;
+}
+
+
+.one ul li:nth-child(4){
+	text-align: center;
+	position: relative;
+}
+.one ul li:nth-child(4) div{
+	width: 100%;
+	height: 180px;
+	background: url(../img/pms_1545286017.38639954!220x220.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.one ul li:nth-child(4) p{
+	color: #333333;
+	font-size: 12px;
+}
+.one ul li:nth-child(4) a{
+	color: #b0b0b0;
+	font-size: 12px;
+}
+.one ul li:nth-child(4) i{
+	color: #ff6700;
+	font-size: 12px;
+}
+
+.one ul li:nth-child(5){
+	text-align: center;
+	position: relative;
+}
+.one ul li:nth-child(5) div{
+	width: 100%;
+	height: 180px;
+	background: url(../img/pms_1545286017.38639954!220x220.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.one ul li:nth-child(5) p{
+	color: #333333;
+	font-size: 12px;
+}
+.one ul li:nth-child(5) a{
+	color: #b0b0b0;
+	font-size: 12px;
+}
+.one ul li:nth-child(5) i{
+	color: #ff6700;
+	font-size: 12px;
+}
+.two{
+	widows: 1000px;
+	display: flex;
+}
+.two ul li:nth-child(1){
+	background: url(../img/xmad_15407948090121_sNfyZ.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+
+
+.two ul li:nth-child(2){
+	text-align: center;
+	position: relative;
+}
+.two ul li:nth-child(2) div{
+	width: 100%;
+	height: 180px;
+	background: url(../img/pms_1545286017.38639954!220x220.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.two ul li:nth-child(2) p{
+	color: #333333;
+	font-size: 12px;
+}
+.two ul li:nth-child(2) a{
+	color: #b0b0b0;
+	font-size: 12px;
+}
+.two ul li:nth-child(2) i{
+	color: #ff6700;
+	font-size: 12px;
+}
+
+.two ul li:nth-child(3){
+	text-align: center;
+	position: relative;
+}
+.two ul li:nth-child(3) div{
+	width: 100%;
+	height: 180px;
+	background: url(../img/pms_1545286017.38639954!220x220.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.two ul li:nth-child(3) p{
+	color: #333333;
+	font-size: 12px;
+}
+.two ul li:nth-child(3) a{
+	color: #b0b0b0;
+	font-size: 12px;
+}
+.two ul li:nth-child(3) i{
+	color: #ff6700;
+	font-size: 12px;
+}
+.two ul li:nth-child(4){
+	text-align: center;
+	position: relative;
+}
+.two ul li:nth-child(4) div{
+	width: 100%;
+	height: 180px;
+	background: url(../img/pms_1545286017.38639954!220x220.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.two ul li:nth-child(4) p{
+	color: #333333;
+	font-size: 12px;
+}
+.two ul li:nth-child(4) a{
+	color: #b0b0b0;
+	font-size: 12px;
+}
+.two ul li:nth-child(4) i{
+	color: #ff6700;
+	font-size: 12px;
+}
+ul li{
+	width: 190px;
+	height: 270px;
+	background: white;
+}
+ul{
+	display: flex;
+	width: 1000px;
+	height: 277px;
+	justify-content: space-between;
+	
+}
+.two ul li:nth-child(5){
+	background:#f5f5f5;
+}
+.two ul li:nth-child(5) div:nth-child(1){
+	width: 100%;
+	height: 128px;
+	background: white;
+}
+.two ul li:nth-child(5) div:nth-child(1) ul{
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+.two ul li:nth-child(5) div:nth-child(1) ul li{
+	justify-content: space-between;
+	width: 95px;
+	height: 100%;
+	background: white;
+}
+.two ul li:nth-child(5) div:nth-child(1) ul li:nth-child(1) p{
+	margin-top: 30px;
+	margin-left: 20px;
+	color:#333333 ;
+}
+.two ul li:nth-child(5) div:nth-child(1) ul li:nth-child(1) i{
+	margin-left: 20px;
+	color: #ff6700;
+}
+.two ul li:nth-child(5) div:nth-child(2){
+	width: 100%;
+	height: 128px;
+	margin-top: 12px;
+	background: white;
+}
+.two ul li:nth-child(5) div:nth-child(2) ul{
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+.two ul li:nth-child(5) div:nth-child(2) ul li{
+	justify-content: space-between;
+	width: 95px;
+	height: 100%;
+	background: white;
+}
+.two ul li:nth-child(5) div:nth-child(2) ul li:nth-child(1) p{
+	margin-top: 30px;
+	margin-left: 20px;
+	color:#333333 ;
+}
+.two ul li:nth-child(5) div:nth-child(2) ul li:nth-child(1) i{
+	margin-left: 20px;
+	color: #ff6700;
+}
+.two ul li:nth-child(5) div:nth-child(2) ul li:nth-child(2){
+    background:url(../img/pms_1504498936.11861982!220x220.jpg) ;	
+    background-size: 100% 100%;
+}
+.two ul li:nth-child(5) div:nth-child(1) ul li:nth-child(2){
+	background: url(../img/pms_1521634907.16181074!220x220.jpg);
+	background-size: 100% 100%;
+}
+.main ul li .echa{
+    display: block;
+    position: absolute;
+    bottom: -72px;
+    left: 0;
+    width: 210px;
+    height: 72px;
+    
+    background: #ff9600;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+.main ul li:hover .echa {
+    bottom: 0;
+    opacity: 1;
+}
+.main-box ul li .echa p:nth-child(1){
+    padding-left: 15px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    text-align: left;
+    color: #fff;
+    line-height: 26px;
+}
+.main-box ul li .echa p:nth-child(2){
+    padding-left: 15px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    color: #eee;
+    text-align: left;
+    line-height: 20px;
+}
