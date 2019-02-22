@@ -1,87 +1,32 @@
-
-                        // localStorage.removeItem('data');  //清除本地存储
-                        var jsonData = JSON.parse(localStorage.getItem('data'));
-                        console.log(jsonData);
-                        if(!jsonData){
-                            jsonData = [];
-                        }
-                        else{
-                            // 初始化
-                            show();
-                        }
-                        function btn(){
-                            if(!$('.xinhao .selected').text() || !$('.ysfl .selected').text() || !$('.ncrl .selected').text() || !$('.xztc .selected').text()){
-                                alert("数据不能有空档");
-                            }
-                            else{
-                                jsonData.push({
-                                    name:$('.xinhao .selected').text(),
-                                    col:$('.ysfl .selected').text(),
-                                    nc:$('.ncrl .selected').text(),
-                                    tc:$('.xztc .selected').text()
-                                });
-                                console.log(jsonData);
-                                $('.xinhao .selected').text()
-                                $('.ysfl .selected').text();
-                                $('.ncrl .selected').text();
-                                $('.xztc .selected').text();
-                                localStorage.setItem('data',JSON.stringify(jsonData));
-                                $(".tt").empty();
-                                show();
-                            }
-                        }
-                        // DOM数据到表格上
-                        function show(){
-                            for(key in jsonData){
-                                $(".tt").append(`
-                                        <tr class="cart-more-buy">
-                                            <td class="cart-product-buy" colspan="5">
-                                                <div class="more-buy-tag">
-                                                    <span>加价购</span>
-                                                </div>
-                                                <span class="more-buy-tips">另外再加15元起，即可换购超值商品</span>
-                                                <span class="more-buy-skip">立即加购 ></span>
-                                            </td>
-                                        </tr>
-                                        <tr class="cart-product hasTheBinder">
-                                            <td class="cart-col-select">
-                                                <div class="mz-checkbox"></div>
-                                                <a href="#" class="cart-product-link">
-                                                    <img src="images/icon09.png" class="cart-product-img" />
-                                                </a>
-                                                <a href="#" class="cart-product-link cart-product-info">
-                                                    <p class="cart-product-item-name">${jsonData[key].name}</p>
-                                                    <p class="cart-product-package-name">${jsonData[key].tc}</p>
-                                                    <p class="cart-product-desc">${jsonData[key].color},${jsonData[key].nc}</p>
-                                                </a>
-                                            </td>
-                                            <td class="cart-col-price">
-                                                <p>
-                                                    <span class="cart-product-price">
-                                                    ${jsonData[key].color}
-                                                </span>
-                                                </p>
-                                            </td>
-                                            <td class="cart-col-number" style="text-align: center; margin-left: 20px;">
-                                                <div class="cart-product-number-adder">
-                                                    <div class="mz-adder">
-                                                        <button class="mz-adder-subtract"></button>
-                                                        <div class="mz-adder-num">
-                                                            <input type="text" class="mz-adder-input" value="1" />
-                                                        </div>
-                                                        <button class="mz-adder-add disabled"></button>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="cart-col-total">
-                                                <span class="cart-product-price total main-goods">
-                                                ${jsonData[key].color}
-                                            </span>
-                                            </td>
-                                            <td class="cart-col-ctrl">
-                                                <div class="cart-product-remove "></div>
-                                            </td>
-                                        </tr>
-                                `);
-                            }
-                        }	
+var t = $(".inp-sl");
+var m = $(".allMoney").text();
+var mm = $(".allMoney");
+function updateMoney(){
+    var tt = t.val();
+    var total =  m*tt;   //输入框中的份额数与每份金额数相乘得到总金额
+    mm.text(total);
+    if(t.val()<=0){
+        mm.text(m);
+    }
+}
+$(function(){
+$(".add").click(function() {
+    t.val(parseInt(t.val()) + 1); //点击加号输入框数值加1
+    updateMoney();  //显示总金额
+});
+$(".min").click(function(){
+    t.val(parseInt(t.val())-1); //点击减号输入框数值减1
+    if(t.val()<=0){
+        t.val(parseInt(t.val())+1); //最小值为1
+    }
+    updateMoney();
+});
+$(".inp-sl").keyup(function(){
+    var c=$(this);
+    if(/[^\d]/.test(c.val())){//替换非数字字符
+        var amount=c.val().replace(/[^\d]/g,'');
+        $(this).val(amount);
+    }
+    updateMoney();  //手动输入数值金额随之改变
+});
+});

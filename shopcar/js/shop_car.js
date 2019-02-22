@@ -36,7 +36,7 @@ var shop_car = (function(){
 		// 获取数据
 		getJson() {
             var shopList = localStorage.shopList || '[]';
-            shopList = JSON.parse(shopList);
+            shopList = JSON.stringify(shopList);
             this.insertData(shopList);
         },
         // 数据渲染
@@ -69,22 +69,26 @@ var shop_car = (function(){
 									<td class="cart-col-price">
 										<p>
 											<span class="cart-product-price">
+											1298
 										</span>
 										</p>
 									</td>
 									<td class="cart-col-number" style="text-align: center; margin-left: 20px;">
 										<div class="cart-product-number-adder">
 											<div class="mz-adder">
-												<button class="mz-adder-subtract"></button>
-												<div class="mz-adder-num">
-													<input type="text" class="mz-adder-input" value="1" />
-												</div>
-												<button class="mz-adder-add disabled"></button>
+											<input class="mz-adder-subtract button min" type="button" value="-" />
+											<div class="mz-adder-num">
+												<input type="text" class="mz-adder-input" value="10" />
+											</div>
+											<input class="mz-adder-add disabled button add" type="button" value="+" />
+											<span class="total">￥<span class="allMoney">10000</span></span>
+											<p class="money-tip">（每份金额10000元）</p>
 											</div>
 										</div>
 									</td>
 									<td class="cart-col-total">
 										<span class="cart-product-price total main-goods">
+										4900
 									</span>
 									</td>
 									<td class="cart-col-ctrl">

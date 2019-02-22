@@ -394,7 +394,7 @@ td, th {
     font-size: 14px;
     color: #333;
 }
-.cart-product .cart-product-number-adder .mz-adder button, .cart-product .cart-product-number-adder-binder .mz-adder button {
+.cart-product .cart-product-number-adder .mz-adder .button, .cart-product .cart-product-number-adder-binder .mz-adder .button {
     width: 24px;
     color: #595959;
 }

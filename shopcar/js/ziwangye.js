@@ -87,21 +87,21 @@ var ziwangye = (function() {
 					$tc[index].classList.add('selected');
 				}
 				}, false)
-			var $jian = document.querySelector('.vm-minus');
-			var $jia = document.querySelector('.vm-plus');
-			var $inp = document.querySelector('.inp-sl');
-			$jian.onclick = function(){
-				$inp.value--;
-				if($inp.value < 2){
-					$jian.classList.add('disabled')
-				}
-			}
-			$jia.onclick = function(){
-				$inp.value++;
-				if($inp.value > 1){
-					$jian.classList.remove('disabled')
-				}
-			}
+			// var $jian = document.querySelector('.vm-minus');
+			// var $jia = document.querySelector('.vm-plus');
+			// var $inp = document.querySelector('.inp-sl');
+			// $jian.onclick = function(){
+			// 	$inp.value--;
+			// 	if($inp.value < 2){
+			// 		$jian.classList.add('disabled')
+			// 	}
+			// }
+			// $jia.onclick = function(){
+			// 	$inp.value++;
+			// 	if($inp.value > 1){
+			// 		$jian.classList.remove('disabled')
+			// 	}
+			// }
 			var $btn_empty = document.querySelector('.btn-empty');
 			$btn_empty.onclick = function(){
 				name = $('.xinhao .selected').text();

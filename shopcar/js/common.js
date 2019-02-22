@@ -1,50 +1,10 @@
-var swiper = new Swiper('.swiper-container', {
-	loop: true,
-	autoplay: {
-		delay: 2000,
-		disableOnInteraction: false
-	},
-	pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
-	}
-});
-console.log(swiper);
 
-var bg = document.querySelector('.Gintama')
-bg.onclick = function() {
-	 location = "../shopcar/shopcar.html";
-	console.log(111)
-}
-var bg = document.querySelector('.SteinsGate')
-bg.onclick = function() {
-	 location = "../shopcar/shopcar.html";
-	console.log(111)
-}
-var bg = document.querySelector('.Unicorn')
-bg.onclick = function() {
-	 location = "../shopcar/shopcar.html";
-	console.log(111)
-}
-var bg = document.querySelector('.Berserk')
-bg.onclick = function() {
-	 location = "../shopcar/shopcar.html";
-	console.log(111)
-}
-var bg = document.querySelector('.SummerWars')
-bg.onclick = function() {
-	 location = "../shopcar/shopcar.html";
-	console.log(111)
-}
-var bg = document.querySelector('.Akito')
-bg.onclick = function() {
-	 location = "../shopcar/shopcar.html";
-	console.log(111)
-}
-var bg = document.querySelector('.Eva')
-bg.onclick = function() {
-	 location = "../shopcar/shopcar.html";
-	console.log(111)
+var ag = document.querySelector('.preview-thumb li a')
+for(var i = 0;i < ag.length;i ++){
+	ag.onclick = function() {
+		$('.preview-thumb li a').css('box-shadow','0 5px 30px rgba(0,0,0,0.5)')
+	   console.log(111)
+   }
 }
 
 
@@ -82,7 +42,7 @@ phone1.onmouseenter = function() {
 	$('.sub-nav ul li a').eq(3).find('i').css({'background':'url(images/img44.jpg) no-repeat','background-size':'100%'})
 	$('.sub-nav ul li a').eq(4).find('i').css({'background':'url(images/img46.png) no-repeat','background-size':'100%'})
 	$('.sub-nav ul li a').eq(5).find('i').css({'background':'url(images/icon09.png) no-repeat','background-size':'100%'})
-	$('.sub-nav ul li a').eq(6).find('i').css({'background':'url(images/img16.png) no-repeat','background-size':'100%'})
+	$('.sub-nav ul li a').eq(6).find('i').css({'background':'url(images/img44.jpg) no-repeat','background-size':'100%'})
 	$('.sub-nav ul li a').eq(7).find('i').css({'background':'url(images/img43.png) no-repeat','background-size':'100%'})
 	$('.sub-nav').addClass('sub-nav-animation')
 	$('.sub-nav').addClass('sub-nav-show')
@@ -230,11 +190,11 @@ phone.onmouseenter = function() {
 	$('.sub-nav ul li a').eq(0).find('i').css({'background':'url(images/img53.jpg) no-repeat','background-size':'100%'})
 	$('.sub-nav ul li a').eq(1).find('i').css({'background':'url(images/img54.png) no-repeat','background-size':'100%'})
 	$('.sub-nav ul li a').eq(2).find('i').css({'background':'url(images/img52.png) no-repeat','background-size':'100%'})
-	$('.sub-nav ul li a').eq(3).find('i').css({'background':'url(images/img21.png) no-repeat','background-size':'100%'})
+	$('.sub-nav ul li a').eq(3).find('i').css({'background':'url(images/img54.png) no-repeat','background-size':'100%'})
 	$('.sub-nav ul li a').eq(4).find('i').css({'background':'url(images/img53.jpg) no-repeat','background-size':'100%'})
 	$('.sub-nav ul li a').eq(5).find('i').css({'background':'url(images/img54.png) no-repeat','background-size':'100%'})
 	$('.sub-nav ul li a').eq(6).find('i').css({'background':'url(images/img52.png) no-repeat','background-size':'100%'})
-	$('.sub-nav ul li a').eq(7).find('i').css({'background':'url(images/img21.png) no-repeat','background-size':'100%'})
+	$('.sub-nav ul li a').eq(7).find('i').css({'background':'url(images/img54.png) no-repeat','background-size':'100%'})
 	$('.logo a').css('background-image', 'url(images/logo2.png)')
 	$('.header-item2').css('background-image', 'url(images/img40.png)')
 	$('.header-item').css('background-image', 'url(images/img41.png)')

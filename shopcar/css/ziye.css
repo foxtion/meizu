@@ -58,7 +58,6 @@
 }
 /* 头部结束  */
 .fast-nav {
-    position: relative;
     left: 0;
     top: 0;
     width: 100%;
@@ -75,7 +74,6 @@
 }
 .-container{
 	background: #f6f8fb;
-	position: relative;
     height: 70px;
     margin: 0 auto;
 }
@@ -103,8 +101,8 @@
 }
 .name{
 	position: absolute;
-    left: 0;
-    top: 15px;
+    left: 332px;
+    top: 100px;
     font-size: 26px;
 }
 .fast-nav .ulist .item a:hover, .fast-nav .ulist .item a:hover{
@@ -512,7 +510,7 @@
 	overflow: hidden
 }
 
-.property-buy .mod-control a {
+.property-buy .mod-control .vm-minus {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -526,13 +524,26 @@
 	color: #000;
 	background: #f7f7f7
 }
-
-.property-buy .mod-control a.disabled {
+.property-buy .mod-control .vm-plus {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 30px;
+	height: 38px;
+	line-height: 38px;
+	font-size: 14px;
+	text-decoration: none;
+	text-align: center;
+	border: 1px solid #e7e7e7;
+	color: #000;
+	background: #f7f7f7
+}
+.property-buy .mod-control input.disabled {
 	cursor: default;
 	color: #e0e0e0
 }
 
-.property-buy .mod-control input {
+.property-buy .mod-control .inp-sl {
 	position: absolute;
 	top: 0;
 	right: 30px;
@@ -545,7 +556,21 @@
 	color: #595959;
 	border: 1px solid #dedede
 }
-
+.property-buy .mod-control span{
+    position: absolute;
+    top: 0;
+    left: 36px;
+    display: block;
+    width: 20px;
+    height: 10px;
+}
+.property-buy .mod-control p{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 10px;
+}
 .property-buy .vm-service a,
 .property-related li a:hover {
 	color: #000
