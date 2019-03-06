@@ -42,8 +42,13 @@ var shop_car = (function(){
         // 数据渲染
         insertData(localStorage) {
             // var $str = '';
-            var $arr = [];
-            for(var i = 0; i < localStorage.length; i++) {
+			var $arr = [];
+			if(localStorage.length){
+				var id = 1
+			}else{
+				var id = 0;
+			}
+            for(var i = 0; i < id; i++) {
                 $arr.push(`<table class="cart-merchant-body" id="${localStorage.name}" index=${i}>
 								<tr class="cart-more-buy">
 									<td class="cart-product-buy" colspan="5">
@@ -58,7 +63,7 @@ var shop_car = (function(){
 									<td class="cart-col-select">
 										<div class="mz-checkbox"></div>
 										<a href="#" class="cart-product-link">
-											<img src="images/icon09.png" class="cart-product-img" />
+											<img src="images/01-small.png" class="cart-product-img" />
 										</a>
 										<a href="#" class="cart-product-link cart-product-info">
 											<p class="cart-product-item-name">${localStorage.name}</p>
@@ -69,7 +74,7 @@ var shop_car = (function(){
 									<td class="cart-col-price">
 										<p>
 											<span class="cart-product-price">
-											1298
+										${localStorage.price}
 										</span>
 										</p>
 									</td>
@@ -78,24 +83,51 @@ var shop_car = (function(){
 											<div class="mz-adder">
 											<input class="mz-adder-subtract button min" type="button" value="-" />
 											<div class="mz-adder-num">
-												<input type="text" class="mz-adder-input" value="10" />
+												<input type="text" class="mz-adder-input" value="${localStorage.n}" />
 											</div>
 											<input class="mz-adder-add disabled button add" type="button" value="+" />
-											<span class="total">￥<span class="allMoney">10000</span></span>
-											<p class="money-tip">（每份金额10000元）</p>
+											
 											</div>
 										</div>
 									</td>
 									<td class="cart-col-total">
 										<span class="cart-product-price total main-goods">
-										4900
+										${localStorage.price * localStorage.n}
 									</span>
 									</td>
 									<td class="cart-col-ctrl">
 										<div class="cart-product-remove "></div>
 									</td>
 								</tr>
-							</table>`);
+							</table>
+							<div class="cart-footer fixed">
+				<div class="mzcontainer">
+					<div class="cart-footer-left">
+						<div class="cart-select-all JSelectAll">
+							<div class="mz-checkbox"></div>
+							<span class="cart-select-title">全选</span>
+						</div>
+						<span class="cart-remove-selected">删除选中的商品</span>
+						<span class="cart-footer-count">
+							共
+							<span class="cart-footer-num" id="totalCount">${localStorage.n}</span> 件商品，已选择
+						<span class="cart-footer-num blue" id="totalSelectedCount">${localStorage.n}</span> 件
+						</span>
+					</div>
+					<div class="cart-footer-right">
+						<span class="class=" cart-footer-sum "">
+							已优惠
+							<span class="cart-footer-num red" id="totalDiscount">0.00</span> 元，合计(不含运费)：
+						<span class="cart-footer-total" id="totalPrice">
+								${localStorage.price * localStorage.n}
+							</span>
+						</span>
+						<div class="mz-btn success to-order-btn" id="cartSubmit">去结算
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>`);
             }
             $box.innerHTML = $arr.join('');
 		},

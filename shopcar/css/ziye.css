@@ -1,4 +1,4 @@
-.container{
+﻿.container{
 	margin: 0 auto;
 	width: 1240px;
 }
@@ -102,7 +102,7 @@
 .name{
 	position: absolute;
     left: 332px;
-    top: 100px;
+    padding-top:18px
     font-size: 26px;
 }
 .fast-nav .ulist .item a:hover, .fast-nav .ulist .item a:hover{
